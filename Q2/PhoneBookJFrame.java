@@ -124,8 +124,8 @@ public class PhoneBookJFrame extends JFrame {
 
 		private void editRecord(int selectedRow) {
 
-			JTextField fullNameField = new JTextField(30);
-			JTextField phoneNumberField = new JTextField(30);
+			JTextField fullNameField = new JTextField(TEXTFIELD_SIZE);
+			JTextField phoneNumberField = new JTextField(TEXTFIELD_SIZE);
 
 			String fullName = model.getValueAt(selectedRow, FULL_NAME_POSITION).toString();
 			String phoneNumber = model.getValueAt(selectedRow, PHONE_NUMBER_POSITION).toString();
